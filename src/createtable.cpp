@@ -348,7 +348,7 @@ wxString wxGridColumnsTable::GetUniqueName()
 
    do
    {
-      name = wxString::Format(("COLUMN%l"), i++);
+      name = wxString::Format(("COLUMN%u"), i++);
    }
    while (!CheckName(name));
    return name;
